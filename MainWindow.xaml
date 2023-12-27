@@ -1,0 +1,21 @@
+﻿<Window x:Class="duomenukodavimas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:duomenukodavimas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="ikelti faila" HorizontalAlignment="Left" Margin="169,138,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click"/>
+        <Button Content="sifravimas" HorizontalAlignment="Left" Margin="169,265,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click_1"/>
+        <Button Content="issifravimas" HorizontalAlignment="Left" Margin="169,307,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click_2"/>
+        <Label x:Name="Label1" Content="Failas Nepasirinktas" HorizontalAlignment="Left" Margin="362,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.979,-0.544" />
+        <ComboBox HorizontalAlignment="Left" Margin="169,0,0,0" VerticalAlignment="Center" Width="147" Name="encryptionComboBox" SelectionChanged="encryptionComboBox_SelectionChanged">
+            <ComboBoxItem Content="AES"/>
+            <ComboBoxItem Content="3DES"/>
+        </ComboBox>
+        <TextBox x:Name="passInput" HorizontalAlignment="Left" Margin="169,173,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
